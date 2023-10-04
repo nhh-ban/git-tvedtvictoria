@@ -35,7 +35,7 @@ You can, of course, move up and down this ladder of difficulty as you see fit yo
 
 The authors of the papers referenced above claim that their galaxy catalog is approximately complete because it is a *representative* sample of a particular volume in space (the ball of radius 11 megaparsecs centered on you and me). There are, however, some signs that the smaller objects are under-represented in the sample. Can you make a plot that reveals this tendency and a likely explanation?
 
-Answer:
+**Answer:**
 
 First I made a histogram using ggplot2, where I used a_26 (galaxy size) as x values and frequency as y values. According to this histogram it looks like the opposite of smaller object being under-represented in the sample. The frequency of galaxies on the smaller size is higher than galaxies of bigger size.
 
