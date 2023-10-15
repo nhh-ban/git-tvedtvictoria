@@ -1,11 +1,12 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/ojZuXTA9)
 # :wave: Welcome to the first assignment in BAN400!
 This is the first assignment in BAN400. As you know -- given that you have come this far -- the assignments in BAN400 will be organized through Github and Github Classroom. By accepting this assignment, the repository will be copied to your Github user so that you can clone it to your own personal machine and work on it. Then, you simply commit your changes and push back to Github when you are done. You can commit and push as much as you want before the deadline. **Do not close the pull request for this repository, that is where the TAs will provide feedback for your work!**
 
-**Date:**
+**Date: 03.10.2023**
 
-**Name:**
+**Name: Victoria Tvedt**
 
-**Student number:**
+**Student number: s221264**
 
 ## :information_source: Problem 1
 Update the personal information above.
@@ -33,6 +34,32 @@ You can, of course, move up and down this ladder of difficulty as you see fit yo
 ## Problem 3
 
 The authors of the papers referenced above claim that their galaxy catalog is approximately complete because it is a *representative* sample of a particular volume in space (the ball of radius 11 megaparsecs centered on you and me). There are, however, some signs that the smaller objects are under-represented in the sample. Can you make a plot that reveals this tendency and a likely explanation?
+
+**Answer:**
+
+First I made a histogram using ggplot2, where I used a_26 (galaxy size) as x values and frequency as y values. According to this histogram it looks like the opposite of smaller object being under-represented in the sample. The frequency of galaxies on the smaller size is higher than galaxies of bigger size.
+
+After taking a closer look at the plots in the paper referenced above I saw that the authors scaled the y-axis by log. This makes it easier to differentiate between very similar values for small galaxies.
+
+I then made a plot where I scaled the y-axis to log10. In this plot it is easier to see that the majority of galaxies have a size of 10 (1e+00) and bigger. We can also see that there are very few galaxies in the paper that are smaller than 0.1 (1e-01).
+
+Some potential explanation for this is:
+
+1) **Observational Biases**
+  Observing smaller objects (galaxies) at a large distance can be challenging. telescopes might have limitation on detecting faint and small objects. We can see in the plot that galaxy size increases with distance, and it also looks like the variation between sizes decreases with distance.
+  
+2) **Survey Limitations**
+  If the survey used to collect the data have specific selection criteria, e.g., the survey collects data on brighter or more massive galaxies, smaller galaxies might be excluded, leading to under-representation.
+  
+3) **Distance Effect**
+  It is easier to detect galaxies that are closer to ours, and smaller galaxies further away might be missed.
+
+
+4) **Cosmic Variance**
+  The distribution of galaxies in the universe is not uniform. There are cosmic structures like voids and galaxy clusters. If the sample falls in a region where smaller galaxies are naturally sparse, it could lead to their under-representation.
+
+
+
 
 ## Problem 4 (optional)
 
